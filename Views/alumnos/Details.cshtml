@@ -1,0 +1,42 @@
+﻿@model Grupo701Desp2.Models.alumnos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>alumnos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CorreoE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CorreoE)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Matricula }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
